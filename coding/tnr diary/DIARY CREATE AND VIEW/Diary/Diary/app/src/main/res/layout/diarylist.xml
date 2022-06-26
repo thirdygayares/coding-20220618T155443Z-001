@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp">
+
+            <RelativeLayout
+                android:id="@+id/date"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="#7D8DFE"
+               >
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_marginTop="1dp"
+                    android:text="JUNE"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/month"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="15"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="38dp"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/diaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/date"
+                android:maxLines="1"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Diary Title"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diaryTitle"
+                android:layout_toRightOf="@+id/date"
+                android:maxLines="1"
+                android:fontFamily="@font/poppinsmediium"
+                android:paddingHorizontal="10dp"
+                android:text="akala ko nung una masaya yun pala hindi"
+                android:textSize="12dp"></TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

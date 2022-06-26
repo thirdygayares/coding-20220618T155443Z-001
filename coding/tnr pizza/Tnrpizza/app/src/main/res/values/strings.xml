@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TNR PIZZA APP</string>
+    <string name="large_amp_thick_crust"><![CDATA[(Large & Thick Crust)]]></string>
+    <string name="ham_amp_cheese"><![CDATA[ham & cheese]]></string>
+</resources>
